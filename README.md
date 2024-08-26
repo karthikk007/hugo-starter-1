@@ -27,4 +27,6 @@ hugo server -D
 > [Fireship.io](https://github.com/fireship-io/fireship.io/tree/master/content/) uses HUGO to manage the website
 
 
+## references
 
+[Common css breakpoints](https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp)
