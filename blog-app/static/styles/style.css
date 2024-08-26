@@ -92,6 +92,59 @@ a {
 
 /* FOOTER END */
 
+.list-item {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.list-item-image {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.list-item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list-item-detail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.list-item-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.list-item-categories {
+    display: flex;
+    gap: 20px;
+}
+
+.list-item-category {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--bg-soft);
+    color: var(--text-soft);
+    font-size: 14px;
+}
+
+/* LIST START */
+
+
+
+/* LIST END */
+
 /* Extra large devices (large laptops and desktops, 1536px and down) */
 @media only screen and (max-width: 1536px) {
     .container {
