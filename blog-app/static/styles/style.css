@@ -2,7 +2,7 @@
     --bg: rgb(27, 36, 43);
     --bg-soft: rgb(37, 37, 97);
     --text: #dee4eb;
-    --test-soft: #cbd2d9;
+    --text-soft: #cbd2d9;
 }
 
 * {
@@ -12,7 +12,7 @@
 
 body {
     background: var(--bg);
-    color: var(--test-soft);
+    color: var(--text-soft);
 }
 
 a {
@@ -26,12 +26,71 @@ a {
     padding-right: 50px;
     margin: auto;
     min-height: 100vh;
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
+
+/* NAVBAR START */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--bg-soft);
+    color: var(--text-soft);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.navbar svg {
+    height: 24px;
+    width: 24px;
+    fill: var(--text-soft);
+}
+
+/* NAVBAR END */
+
+/* FOOTER START */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    font-size: 14px;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+}
+
+.social svg {
+    width: 30px;
+    height: 30px;
+}
+
+/* FOOTER END */
 
 /* Extra large devices (large laptops and desktops, 1536px and down) */
 @media only screen and (max-width: 1536px) {
@@ -73,6 +132,6 @@ a {
 /* Extra small devices (phones, 640px and down) */
 @media only screen and (max-width: 640px) {
     .container {
-        max-width: 475px;
+        max-width: 640px;
     }
 }
