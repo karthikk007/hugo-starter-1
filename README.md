@@ -26,6 +26,8 @@ hugo server -D
 
 > [Fireship.io](https://github.com/fireship-io/fireship.io/tree/master/content/) uses HUGO to manage the website
 
+> [SVG repo](https://www.svgrepo.com/)
+
 
 ## references
 
