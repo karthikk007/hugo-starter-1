@@ -6,7 +6,7 @@ description = "This is the description"
 image = "/images/1.avif"
 image_big = "/images/1.avif"
 categories = ["general", "music", "life", "node js"]
-authors = ["Jackie Jackson"]
+authors = ["kk007"]
 avatar = "/images/avatar_2.webp"
 +++
 

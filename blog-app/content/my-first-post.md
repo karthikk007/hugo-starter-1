@@ -1,13 +1,13 @@
 +++
 title = 'My First Post'
 date = 2024-08-27T02:32:30+05:30
-draft = true
+draft = true    
 description = "This is the description"
 image = "/images/1.avif"
 image_big = "/images/1.avif"
-categories = ["general", "music", "life", "node js"]
-authors = ["Jackie Jackson"]
-avatar = "/images/avatar_2.webp"
+categories = ["general", "music"]
+authors = ["Json Statham"]
+avatar = "/images/avatar.webp"
 +++
 
 ## Introduction
