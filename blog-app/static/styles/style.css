@@ -16,6 +16,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+body.light {
+    --bg: #dee4eb;
+    --text: rgb(27, 36, 43);
+
+    --text-soft: rgb(37, 37, 97);
+    --bg-soft: #cbd2d9;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -72,6 +80,42 @@ a {
     height: 24px;
     width: 24px;
     fill: var(--text-soft);
+}
+
+.toggle {
+    width: 40px;
+    height: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 5px;
+
+    background-color: var(--bg-soft);
+    border: 0.5px solid var(--text-soft);
+
+    padding: 5px;
+    position: relative;
+}
+
+.ball {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    
+    position: absolute;
+
+    background-color: var(--text-soft);
+    
+    left: 0;
+    border: 1px solid var(--bg-soft);
+}
+
+.light .ball {
+    left: unset;
+    right: 0;
 }
 
 /* NAVBAR END */
@@ -361,6 +405,10 @@ a {
     }
 
     .list-item-image {
+        display: none;
+    }
+
+    .search-button span {
         display: none;
     }
 }
