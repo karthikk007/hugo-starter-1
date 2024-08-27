@@ -13,6 +13,7 @@
 body {
     background: var(--bg);
     color: var(--text-soft);
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -40,10 +41,15 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 50px;
+    height: 100px;
 
     padding-left: 50px;
     padding-right: 50px;
+
+    position: sticky;
+    top: 0;
+
+    background-color: var(--bg);
 }
 
 .links {
@@ -92,6 +98,8 @@ a {
 
 /* FOOTER END */
 
+/* LIST START */
+
 .list-item {
     display: flex;
     align-items: center;
@@ -100,12 +108,14 @@ a {
 }
 
 .list-item-image {
-    width: 400px;
-    height: 200px;
+    flex: 1;
+    width: 100%;
+    max-width: 400px;
     object-fit: cover;
 }
 
 .list-item-text {
+    flex: 2;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -139,23 +149,134 @@ a {
     font-size: 14px;
 }
 
-/* LIST START */
-
-
-
 /* LIST END */
+
+
+/* SINGLE START */
+
+.single-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.single-head-texts {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.single-head-image {
+    flex: 1;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.single-head-title {
+    font-size: 48px;
+}
+
+.single-head-description {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.single-head-detail {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.single-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.single-category {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--bg-soft);
+    color: var(--text-soft);
+    font-size: 14px;
+}
+
+.single-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.single-content {
+    flex: 3;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.single-content p,
+.single-content h1,
+.single-content h2,
+.single-content h3 {
+    margin: 20px 0px;
+}
+
+.single-content img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+
+.single-content pre {
+    width: 100%;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+
+.single-right-bar {
+    flex: 1;
+}
+
+/* SINGLE END */
+
+
+/* RIGHTBAR START */
+
+.right-bar {
+    position: sticky;
+    top: 100px;
+}
+
+.right-bar-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-bar-image-hr {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: none;
+}
+
+/* RIGHTBAR END */
 
 /* Extra large devices (large laptops and desktops, 1536px and down) */
 @media only screen and (max-width: 1536px) {
     .container {
-        max-width: 1366px;
+        max-width: 1400px;
     }
 }
 
 /* Large devices (laptops/desktops, 1366px and down) */
 @media only screen and (max-width: 1366px) {
     .container {
-        max-width: 1280px;
+        max-width: 1300px;
     }
 }
 
@@ -164,14 +285,26 @@ a {
     .container {
         max-width: 1024px;
     }
+
+    .single-head-image {
+        max-width: 400px;
+    }
+
+    .list-item {
+        gap: 20px;
+    }
 }
 
 /* Medium devices (landscape tablets, 1024px and down) */
 @media only screen and (max-width: 1024px) {
     .container {
-        max-width: 768px;
-        padding-left: 10px;
-        padding-right: 10px;
+        max-width: 900px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .list-item-image {
+        max-width: 300px;
     }
 }
 
@@ -180,11 +313,54 @@ a {
     .container {
         max-width: 640px;
     }
+
+    .single-bottom {
+        flex-direction: column-reverse;
+    }
+
+    .right-bar-image {
+        display: none;
+    }
+    .right-bar-image-hr {
+        display: block;
+    }
+
+    .single-head-title {
+        font-size: 36px;
+    }
+
+    .single-head-description {
+        font-size: 18px;
+    }
+
+    .single-head-image {
+        max-width: 250px;
+    }
+
+    code {
+        font-size: 14px;
+    }
+
+    .single-content {
+        font-size: 16px;
+    }
+
+    .list-item-image {
+        max-width: 200px;
+    }
 }
 
 /* Extra small devices (phones, 640px and down) */
 @media only screen and (max-width: 640px) {
     .container {
         max-width: 640px;
+    }
+
+    .single-head-image {
+        display: none;
+    }
+
+    .list-item-image {
+        display: none;
     }
 }

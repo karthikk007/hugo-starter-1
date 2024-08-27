@@ -1,5 +1,5 @@
 +++
-title = 'My First Post'
+title = 'My First Post My First Post My First Post My First Post My First Post My First Post'
 date = 2024-08-27T02:32:30+05:30
 draft = true    
 description = "This is the description"
@@ -38,3 +38,24 @@ This is **bold** text
 [URL](https://google.com)
 
 ![description of image](/images/test.webp)
+
+```sh
+brew install imagemagix
+```
+
+This is the css content
+
+```css
+.container {
+    max-width: 1366px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+    min-height: 100vh;
+    /* background-color: rebeccapurple; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+```
